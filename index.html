@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>MotoPress - YouTube video to JSON-LD converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.ico"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-branding">
+            <a href="https://motopress.com/">
+                <img src="./images/motopress_logo_white.svg" alt="MotoPress">
+            </a>
+        </div>
+    </header>
+
+    <div class="site">
+
+        <h1>YouTube Video to JSON-LD</h1>
+
+        <form id="submit-form" class="convert-form" action="" method="get">
+            <input name="youtube-link" type="text" placeholder="https://www.youtube.com/watch?v=6nexYIpIC4E">
+            <button>Submit</button>
+        </form>
+
+        <div class="video-json-wrapper">
+            <button id="copy-to-clipboard">Copy</button>
+            <textarea id="video-json" class="video-json"></textarea>
+        </div>
+
+        <p class="site-description">Made with 💙 by <a href="https://motopress.com/">MotoPress</a>.</p>
+    </div>
+
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+</html>
